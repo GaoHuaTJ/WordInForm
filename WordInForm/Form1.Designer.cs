@@ -28,13 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnChooseWord = new System.Windows.Forms.Button();
+            this.textBoxPath = new System.Windows.Forms.TextBox();
+            this.btnOpenWord = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnChooseWord
+            // 
+            this.btnChooseWord.Location = new System.Drawing.Point(492, 65);
+            this.btnChooseWord.Name = "btnChooseWord";
+            this.btnChooseWord.Size = new System.Drawing.Size(154, 37);
+            this.btnChooseWord.TabIndex = 0;
+            this.btnChooseWord.Text = "选择Word文件";
+            this.btnChooseWord.UseVisualStyleBackColor = true;
+            this.btnChooseWord.Click += new System.EventHandler(this.btnChooseWord_Click);
+            // 
+            // textBoxPath
+            // 
+            this.textBoxPath.Location = new System.Drawing.Point(77, 65);
+            this.textBoxPath.Name = "textBoxPath";
+            this.textBoxPath.Size = new System.Drawing.Size(350, 25);
+            this.textBoxPath.TabIndex = 1;
+            // 
+            // btnOpenWord
+            // 
+            this.btnOpenWord.Location = new System.Drawing.Point(492, 135);
+            this.btnOpenWord.Name = "btnOpenWord";
+            this.btnOpenWord.Size = new System.Drawing.Size(154, 33);
+            this.btnOpenWord.TabIndex = 2;
+            this.btnOpenWord.Text = "打开word文件";
+            this.btnOpenWord.UseVisualStyleBackColor = true;
+            this.btnOpenWord.Click += new System.EventHandler(this.btnOpenWord_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(798, 329);
+            this.Controls.Add(this.btnOpenWord);
+            this.Controls.Add(this.textBoxPath);
+            this.Controls.Add(this.btnChooseWord);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnChooseWord;
+        private System.Windows.Forms.TextBox textBoxPath;
+        private System.Windows.Forms.Button btnOpenWord;
     }
 }
 
